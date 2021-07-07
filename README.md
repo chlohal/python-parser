@@ -24,3 +24,8 @@ I hope that the output object can be understood with a glance at the [test outpu
 ## PegJS
 
 This project uses [PegJS](https://github.com/pegjs/pegjs) for parsing, which is [available under the MIT License](https://github.com/pegjs/pegjs/blob/master/LICENSE). The PegJS-generated parser is 1 Javascript file that doesn't depend on anything!
+
+## Questions
+
+**How is this different from [Skulpt](https://skulpt.org/)?**  
+Skulpt runs Python. This project *only* parses it and then gives you a syntax tree. You can use that for whatever you like: code formatting; static code analysis; even making your own interpreter!
