@@ -1,0 +1,3803 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Import statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportNameStatement",
+      "imports": [
+        {
+          "type": "Identifier",
+          "value": "a"
+        },
+        {
+          "type": "Identifier",
+          "value": "b"
+        }
+      ]
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportNameStatement",
+      "imports": [
+        {
+          "type": "AsName",
+          "target": {
+            "type": "DottedName",
+            "head": {
+              "type": "Identifier",
+              "value": "b"
+            },
+            "tail": [
+              {
+                "type": "Identifier",
+                "value": "c"
+              }
+            ]
+          },
+          "as": [
+            "as",
+            {
+              "type": "Identifier",
+              "value": "d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportNameStatement",
+      "imports": [
+        {
+          "type": "DottedName",
+          "head": {
+            "type": "Identifier",
+            "value": "a"
+          },
+          "tail": [
+            {
+              "type": "Identifier",
+              "value": "b"
+            },
+            {
+              "type": "Identifier",
+              "value": "c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Import-from statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "a"
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "b"
+        }
+      ],
+      "ellips": ""
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "a"
+      },
+      "imprt": "*",
+      "ellips": ""
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "a"
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "b"
+        },
+        {
+          "type": "Identifier",
+          "value": "c"
+        }
+      ],
+      "ellips": ""
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "DottedName",
+        "head": {
+          "type": "Identifier",
+          "value": "a"
+        },
+        "tail": [
+          {
+            "type": "Identifier",
+            "value": "b"
+          }
+        ]
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "c"
+        }
+      ],
+      "ellips": ""
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": null,
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "b"
+        }
+      ],
+      "ellips": "."
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": null,
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "b"
+        }
+      ],
+      "ellips": ".."
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "a"
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "b"
+        }
+      ],
+      "ellips": "."
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "a"
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "b"
+        }
+      ],
+      "ellips": ".."
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Function calls"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        },
+        "trailers": [
+          {
+            "type": "FunctionCallerParams",
+            "args": {
+              "type": "Arglist",
+              "args": [
+                {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "b"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        },
+        "trailers": [
+          {
+            "type": "FunctionCallerParams",
+            "args": {
+              "type": "Arglist",
+              "args": [
+                {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "StringLiteral",
+                      "value": "'d'"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Future import statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "__future__"
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "print_statement"
+        }
+      ],
+      "ellips": ""
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "__future__"
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "python4"
+        }
+      ],
+      "ellips": ""
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ImportFromStatement",
+      "name": {
+        "type": "Identifier",
+        "value": "__future__"
+      },
+      "imprt": [
+        {
+          "type": "Identifier",
+          "value": "absolute_import"
+        },
+        {
+          "type": "Identifier",
+          "value": "division"
+        },
+        {
+          "type": "Identifier",
+          "value": "print_function"
+        },
+        {
+          "type": "Identifier",
+          "value": "unicode_literals"
+        }
+      ],
+      "ellips": ""
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Print statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "PrintStatement",
+      "value": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "PrintStatement",
+      "value": {
+        "type": "TestList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "b"
+            }
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "c"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "PrintStatement",
+      "value": {
+        "type": "TestList",
+        "list": [
+          {
+            "type": "BooleanComparison",
+            "left": {
+              "type": "Value",
+              "value": {
+                "type": "NumericLiteral",
+                "value": "0"
+              }
+            },
+            "operator": "or",
+            "right": [
+              {
+                "type": "Value",
+                "value": {
+                  "type": "NumericLiteral",
+                  "value": "1"
+                }
+              }
+            ]
+          },
+          {
+            "type": "BooleanComparison",
+            "left": {
+              "type": "Value",
+              "value": {
+                "type": "NumericLiteral",
+                "value": "1"
+              }
+            },
+            "operator": "or",
+            "right": [
+              {
+                "type": "Value",
+                "value": {
+                  "type": "NumericLiteral",
+                  "value": "0"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "PrintStatement",
+      "value": {
+        "type": "BooleanComparison",
+        "left": {
+          "type": "Value",
+          "value": {
+            "type": "NumericLiteral",
+            "value": "0"
+          }
+        },
+        "operator": "or",
+        "right": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "NumericLiteral",
+              "value": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Print statements with redirection"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "OperatorExpression",
+        "left": {
+          "type": "Value",
+          "value": {
+            "type": "Identifier",
+            "value": "print"
+          }
+        },
+        "right": [
+          {
+            "type": "OperatorExpressionTail",
+            "operator": {
+              "type": "Operator",
+              "value": ">>"
+            },
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "TestList",
+        "list": [
+          {
+            "type": "OperatorExpression",
+            "left": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "print"
+              }
+            },
+            "right": [
+              {
+                "type": "OperatorExpressionTail",
+                "operator": {
+                  "type": "Operator",
+                  "value": ">>"
+                },
+                "value": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "a"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "StringLiteral",
+              "value": "\"b\""
+            }
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "StringLiteral",
+              "value": "\"c\""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Assert statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "AssertStatement",
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      },
+      "alt": null
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "AssertStatement",
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "b"
+        }
+      },
+      "alt": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "c"
+        }
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Expression statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "OperatorExpression",
+        "left": {
+          "type": "Value",
+          "value": {
+            "type": "Identifier",
+            "value": "b"
+          }
+        },
+        "right": [
+          {
+            "type": "OperatorExpressionTail",
+            "operator": {
+              "type": "Operator",
+              "value": "+"
+            },
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "c"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "TestList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "NumericLiteral",
+              "value": "1"
+            }
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "NumericLiteral",
+              "value": "2"
+            }
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "NumericLiteral",
+              "value": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "ExpressionStatement",
+      "expr": {
+        "type": "TestList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "NumericLiteral",
+              "value": "1"
+            }
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "NumericLiteral",
+              "value": "2"
+            }
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "NumericLiteral",
+              "value": "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Delete statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "DelStatement",
+      "exprlist": {
+        "type": "ExprList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "a"
+            },
+            "trailers": [
+              {
+                "type": "SubscriptParams",
+                "subscripts": {
+                  "type": "SubscriptList",
+                  "list": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": "NumericLiteral",
+                        "value": "1"
+                      }
+                    },
+                    null
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "b"
+            },
+            "trailers": [
+              {
+                "type": "SubscriptParams",
+                "subscripts": {
+                  "type": "SubscriptList",
+                  "list": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": "NumericLiteral",
+                        "value": "2"
+                      }
+                    },
+                    null
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "Comment",
+      "comment": " Control-flow statements"
+    },
+    {
+      "type": "Comment",
+      "comment": "====================================="
+    },
+    {
+      "type": "BlankLine"
+    },
+    {
+      "type": "WhileStatement",
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "true"
+        }
+      },
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PassStatement"
+          },
+          {
+            "type": "BreakStatement"
+          },
+          {
+            "type": "ContinueStatement"
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ReturnStatement",
+            "value": null
+          },
+          {
+            "type": "ReturnStatement",
+            "value": {
+              "type": "TestList",
+              "list": [
+                {
+                  "type": "OperatorExpression",
+                  "left": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "a"
+                    }
+                  },
+                  "right": [
+                    {
+                      "type": "OperatorExpressionTail",
+                      "operator": {
+                        "type": "Operator",
+                        "value": "+"
+                      },
+                      "value": {
+                        "type": "Value",
+                        "value": {
+                          "type": "Identifier",
+                          "value": "b"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "c"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "ReturnStatement",
+            "value": {
+              "type": "UnaryOperator",
+              "operator": "not ",
+              "value": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "b"
+                }
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "elseBlock": null
+    },
+    {
+      "type": "IfStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "b"
+              }
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "c"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      },
+      "elifBlocks": [],
+      "elseBlock": null
+    },
+    {
+      "type": "IfStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "b"
+              }
+            }
+          }
+        ]
+      },
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      },
+      "elifBlocks": [
+        {
+          "type": "ElifStatement",
+          "test": {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "c"
+            }
+          },
+          "body": {
+            "type": "Suite",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expr": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "d"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "elseBlock": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "f"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      }
+    },
+    {
+      "type": "IfStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "b"
+              }
+            }
+          }
+        ]
+      },
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      },
+      "elifBlocks": [],
+      "elseBlock": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "f"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "IfStatement",
+            "body": {
+              "type": "ExpressionStatement",
+              "expr": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "b"
+                }
+              }
+            },
+            "test": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            },
+            "elifBlocks": [],
+            "elseBlock": null
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "IfStatement",
+            "body": {
+              "type": "StatementList",
+              "list": [
+                {
+                  "type": "ExpressionStatement",
+                  "expr": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "b"
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expr": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "c"
+                    }
+                  }
+                }
+              ]
+            },
+            "test": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            },
+            "elifBlocks": [],
+            "elseBlock": null
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          }
+        ]
+      }
+    },
+    {
+      "type": "IfStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "IfStatement",
+            "body": {
+              "type": "Suite",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expr": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "c"
+                    }
+                  }
+                }
+              ]
+            },
+            "test": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "b"
+              }
+            },
+            "elifBlocks": [],
+            "elseBlock": {
+              "type": "Suite",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "body": {
+                    "type": "Suite",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expr": {
+                          "type": "Value",
+                          "value": {
+                            "type": "Identifier",
+                            "value": "f"
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expr": {
+                          "type": "Value",
+                          "value": {
+                            "type": "Identifier",
+                            "value": "g"
+                          }
+                        }
+                      },
+                      {
+                        "type": "BlankLine"
+                      },
+                      null,
+                      null,
+                      null,
+                      {
+                        "type": "BlankLine"
+                      }
+                    ]
+                  },
+                  "test": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "e"
+                    }
+                  },
+                  "elifBlocks": [],
+                  "elseBlock": null
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      },
+      "elifBlocks": [],
+      "elseBlock": null
+    },
+    {
+      "type": "WhileStatement",
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "a"
+        }
+      },
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "b"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "elseBlock": null
+    },
+    {
+      "type": "WhileStatement",
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "c"
+        }
+      },
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "d"
+              }
+            }
+          }
+        ]
+      },
+      "elseBlock": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "e"
+              }
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "f"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ForStatement",
+      "vars": {
+        "type": "ExprList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "line"
+            }
+          },
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "i"
+            }
+          }
+        ]
+      },
+      "inList": {
+        "type": "TestList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "lines"
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PrintStatement",
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "line"
+              }
+            }
+          },
+          {
+            "type": "ForStatement",
+            "vars": {
+              "type": "ExprList",
+              "list": [
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "character"
+                  }
+                },
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "j"
+                  }
+                }
+              ]
+            },
+            "inList": {
+              "type": "TestList",
+              "list": [
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "line"
+                  }
+                }
+              ]
+            },
+            "body": {
+              "type": "Suite",
+              "body": [
+                {
+                  "type": "PrintStatement",
+                  "value": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "character"
+                    }
+                  }
+                }
+              ]
+            },
+            "elseBlock": null
+          }
+        ]
+      },
+      "elseBlock": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PrintStatement",
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "x"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ForStatement",
+      "vars": {
+        "type": "ExprList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "Identifier",
+              "value": "x"
+            }
+          }
+        ]
+      },
+      "inList": {
+        "type": "TestList",
+        "list": [
+          {
+            "type": "Value",
+            "value": {
+              "type": "ListLiteral",
+              "value": {
+                "type": "ListComp",
+                "list": [
+                  {
+                    "type": "Value",
+                    "value": {
+                      "type": "ParenWrappedValue",
+                      "value": {
+                        "type": "ListComp",
+                        "list": [
+                          {
+                            "type": "Value",
+                            "value": {
+                              "type": "NumericLiteral",
+                              "value": "1"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "Value",
+                    "value": {
+                      "type": "ParenWrappedValue",
+                      "value": {
+                        "type": "ListComp",
+                        "list": [
+                          {
+                            "type": "Value",
+                            "value": {
+                              "type": "NumericLiteral",
+                              "value": "2"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "type": "Value",
+                    "value": {
+                      "type": "ParenWrappedValue",
+                      "value": {
+                        "type": "ListComp",
+                        "list": [
+                          {
+                            "type": "Value",
+                            "value": {
+                              "type": "NumericLiteral",
+                              "value": "3"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "x"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "elseBlock": null
+    },
+    {
+      "type": "TryStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            }
+          }
+        ]
+      },
+      "catchBlock": {
+        "type": "CatchBlock",
+        "finallyBlock": null,
+        "elseBlock": null,
+        "exceptBlocks": [
+          {
+            "type": "Suite",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expr": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "c"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "Suite",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expr": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "f"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "Suite",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expr": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "i"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "Suite",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expr": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "j"
+                  }
+                }
+              },
+              {
+                "type": "BlankLine"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "TryStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            }
+          }
+        ]
+      },
+      "catchBlock": {
+        "type": "CatchBlock",
+        "finallyBlock": {
+          "type": "Suite",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expr": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "f"
+                }
+              }
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            }
+          ]
+        },
+        "elseBlock": {
+          "type": "Suite",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expr": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "e"
+                }
+              }
+            }
+          ]
+        },
+        "exceptBlocks": [
+          {
+            "type": "Suite",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expr": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "c"
+                  }
+                }
+              },
+              {
+                "type": "ExpressionStatement",
+                "expr": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "d"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "WithStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "c"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "withItem": {
+        "type": "WithAsItem",
+        "value": {
+          "type": "Value",
+          "value": {
+            "type": "Identifier",
+            "value": "a"
+          }
+        },
+        "as": {
+          "type": "Value",
+          "value": {
+            "type": "Identifier",
+            "value": "b"
+          }
+        }
+      }
+    },
+    {
+      "type": "WithStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "f"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "withItem": {
+        "type": "WithItemList",
+        "list": [
+          {
+            "type": "WithAsItem",
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "open"
+              },
+              "trailers": [
+                {
+                  "type": "FunctionCallerParams",
+                  "args": {
+                    "type": "Arglist",
+                    "args": [
+                      {
+                        "type": "Argument",
+                        "arg": {
+                          "type": "Value",
+                          "value": {
+                            "type": "StringLiteral",
+                            "value": "'d'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "as": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "d"
+              }
+            }
+          },
+          {
+            "type": "WithAsItem",
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "open"
+              },
+              "trailers": [
+                {
+                  "type": "FunctionCallerParams",
+                  "args": {
+                    "type": "Arglist",
+                    "args": [
+                      {
+                        "type": "Argument",
+                        "arg": {
+                          "type": "Value",
+                          "value": {
+                            "type": "StringLiteral",
+                            "value": "'e'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "as": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "e"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "WithStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "h"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "withItem": {
+        "type": "WithItem",
+        "value": {
+          "type": "Value",
+          "value": {
+            "type": "Identifier",
+            "value": "g"
+          }
+        }
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": []
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "b"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "a"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "d"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "e"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "c"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "g"
+                  }
+                }
+              },
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "h"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "i"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "g"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "str"
+                  }
+                },
+                "arg": {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "a"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "c"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "b"
+                  },
+                  "trailers": [
+                    {
+                      "type": "DotProperty",
+                      "property": {
+                        "type": "Identifier",
+                        "value": "c"
+                      }
+                    }
+                  ]
+                },
+                "arg": {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "a"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "c"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "Sequence"
+                  },
+                  "trailers": [
+                    {
+                      "type": "SubscriptParams",
+                      "subscripts": {
+                        "type": "SubscriptList",
+                        "list": [
+                          {
+                            "type": "Value",
+                            "value": {
+                              "type": "Identifier",
+                              "value": "T"
+                            }
+                          },
+                          null
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "arg": {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "a"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "d"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "a"
+                  }
+                }
+              },
+              {
+                "type": "ExpressionAssignmentDefaultValueArg",
+                "argument": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "b"
+                  }
+                },
+                "defaultVal": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "c"
+                  }
+                }
+              },
+              {
+                "type": "VarArg",
+                "argument": {
+                  "type": "Identifier",
+                  "value": "c"
+                }
+              },
+              {
+                "type": "KwVarArg",
+                "argument": {
+                  "type": "Identifier",
+                  "value": "d"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "i"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "str"
+                  }
+                },
+                "arg": {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "a"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "value": {
+              "type": "Value",
+              "value": "N"
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "async"
+              }
+            }
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "d"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "DefaultArgument",
+                "default": {
+                  "type": "Value",
+                  "value": {
+                    "type": "StringLiteral",
+                    "value": "\"default\""
+                  }
+                },
+                "arg": {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "a"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "DefaultArgument",
+                "default": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "c"
+                  }
+                },
+                "arg": {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "b"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "value": {
+              "type": "Value",
+              "value": "N"
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "d"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "ParenWrappedValue",
+                    "value": {
+                      "type": "ListComp",
+                      "list": [
+                        {
+                          "type": "Value",
+                          "value": {
+                            "type": "Identifier",
+                            "value": "a"
+                          }
+                        },
+                        {
+                          "type": "Value",
+                          "value": {
+                            "type": "Identifier",
+                            "value": "b"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "ParenWrappedValue",
+                "value": {
+                  "type": "ListComp",
+                  "list": [
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": "Identifier",
+                        "value": "a"
+                      }
+                    },
+                    {
+                      "type": "Value",
+                      "value": {
+                        "type": "Identifier",
+                        "value": "b"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "e"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "VarArg",
+                "argument": {
+                  "type": "TypedArgument",
+                  "typeType": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "str"
+                    }
+                  },
+                  "name": {
+                    "type": "Identifier",
+                    "value": "list"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PassStatement"
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "e"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "KwVarArg",
+                "argument": {
+                  "type": "TypedArgument",
+                  "typeType": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "str"
+                    }
+                  },
+                  "name": {
+                    "type": "Identifier",
+                    "value": "list"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PassStatement"
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "e"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": []
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "NonlocalStatement",
+            "names": [
+              {
+                "type": "Identifier",
+                "value": "a"
+              }
+            ]
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "f"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "h"
+                  }
+                }
+              },
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "i"
+                  }
+                }
+              },
+              {
+                "type": "PositionOnlyArgsMarkerArg"
+              },
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "j"
+                  }
+                }
+              },
+              {
+                "type": "DefaultArgument",
+                "default": {
+                  "type": "Value",
+                  "value": {
+                    "type": "NumericLiteral",
+                    "value": "100"
+                  }
+                },
+                "arg": {
+                  "type": "Argument",
+                  "arg": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "k"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "KwVarArg",
+                "argument": {
+                  "type": "Identifier",
+                  "value": "kwarg"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "value": {
+              "type": "TestList",
+              "list": [
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "h"
+                  }
+                },
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "i"
+                  }
+                },
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "j"
+                  }
+                },
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "k"
+                  }
+                },
+                {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "kwarg"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "g"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "VarArg",
+                "argument": {
+                  "type": "Identifier",
+                  "value": "a"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "i"
+              },
+              "trailers": [
+                {
+                  "type": "FunctionCallerParams",
+                  "args": {
+                    "type": "Arglist",
+                    "args": [
+                      {
+                        "type": "Argument",
+                        "arg": {
+                          "type": "Value",
+                          "value": {
+                            "type": "ParenWrappedValue",
+                            "value": {
+                              "type": "ListComp",
+                              "list": [
+                                {
+                                  "type": "StarExpression",
+                                  "expr": {
+                                    "type": "Value",
+                                    "value": {
+                                      "type": "Identifier",
+                                      "value": "a"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "j"
+              },
+              "trailers": [
+                {
+                  "type": "FunctionCallerParams",
+                  "args": {
+                    "type": "Arglist",
+                    "args": [
+                      {
+                        "type": "Argument",
+                        "arg": {
+                          "type": "Value",
+                          "value": {
+                            "type": "ParenWrappedValue",
+                            "value": {
+                              "type": "ListComp",
+                              "list": [
+                                {
+                                  "type": "Value",
+                                  "value": {
+                                    "type": "ParenWrappedValue",
+                                    "value": {
+                                      "type": "ListComp",
+                                      "list": [
+                                        {
+                                          "type": "StarExpression",
+                                          "expr": {
+                                            "type": "Value",
+                                            "value": {
+                                              "type": "Identifier",
+                                              "value": "a"
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          },
+          null,
+          null,
+          null,
+          null,
+          null,
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "h"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "parameters": {
+        "type": "Parameters",
+        "params": [
+          {
+            "type": "Arguments",
+            "arguments": [
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "b"
+                  }
+                }
+              },
+              {
+                "type": "Argument",
+                "arg": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "c"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "typeType": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PassStatement"
+          },
+          {
+            "type": "BlankLine"
+          }
+        ]
+      },
+      "name": {
+        "type": "Identifier",
+        "value": "a"
+      }
+    },
+    {
+      "type": "IfStatement",
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PrintStatement",
+            "value": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "e"
+              }
+            }
+          },
+          {
+            "type": "WhileStatement",
+            "test": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "f"
+              },
+              "trailers": [
+                {
+                  "type": "FunctionCallerParams",
+                  "args": null
+                }
+              ]
+            },
+            "body": {
+              "type": "Suite",
+              "body": [
+                {
+                  "type": "PassStatement"
+                },
+                {
+                  "type": "BlankLine"
+                },
+                {
+                  "type": "BlankLine"
+                },
+                {
+                  "type": "BlankLine"
+                },
+                null,
+                null,
+                null,
+                {
+                  "type": "BlankLine"
+                }
+              ]
+            },
+            "elseBlock": null
+          }
+        ]
+      },
+      "test": {
+        "type": "Value",
+        "value": {
+          "type": "Identifier",
+          "value": "d"
+        }
+      },
+      "elifBlocks": [],
+      "elseBlock": null
+    },
+    {
+      "type": "ClassDefinition",
+      "name": {
+        "type": "Identifier",
+        "value": "A"
+      },
+      "params": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "FunctionDefinition",
+            "parameters": {
+              "type": "Parameters",
+              "params": [
+                {
+                  "type": "Arguments",
+                  "arguments": [
+                    {
+                      "type": "Argument",
+                      "arg": {
+                        "type": "Value",
+                        "value": {
+                          "type": "Identifier",
+                          "value": "self"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "typeType": null,
+            "body": {
+              "type": "Suite",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "value": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "c"
+                    }
+                  }
+                }
+              ]
+            },
+            "name": {
+              "type": "Identifier",
+              "value": "b"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "name": {
+        "type": "Identifier",
+        "value": "B"
+      },
+      "params": null,
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "PassStatement"
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "name": {
+        "type": "Identifier",
+        "value": "B"
+      },
+      "params": {
+        "type": "Arglist",
+        "args": [
+          {
+            "type": "Argument",
+            "arg": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "method1"
+              }
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "FunctionDefinition",
+            "parameters": {
+              "type": "Parameters",
+              "params": [
+                {
+                  "type": "Arguments",
+                  "arguments": [
+                    {
+                      "type": "Argument",
+                      "arg": {
+                        "type": "Value",
+                        "value": {
+                          "type": "Identifier",
+                          "value": "self"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "typeType": null,
+            "body": {
+              "type": "Suite",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "value": null
+                },
+                {
+                  "type": "BlankLine"
+                },
+                null,
+                null,
+                null,
+                {
+                  "type": "BlankLine"
+                }
+              ]
+            },
+            "name": {
+              "type": "Identifier",
+              "value": "method1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "name": {
+        "type": "Identifier",
+        "value": "A"
+      },
+      "params": {
+        "type": "Arglist",
+        "args": [
+          {
+            "type": "Argument",
+            "arg": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "B"
+              }
+            }
+          },
+          {
+            "type": "Argument",
+            "arg": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "C"
+              }
+            }
+          }
+        ]
+      },
+      "body": {
+        "type": "Suite",
+        "body": [
+          {
+            "type": "FunctionDefinition",
+            "parameters": {
+              "type": "Parameters",
+              "params": []
+            },
+            "typeType": null,
+            "body": {
+              "type": "Suite",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expr": {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "e"
+                    }
+                  }
+                },
+                {
+                  "type": "BlankLine"
+                },
+                null,
+                null,
+                null,
+                {
+                  "type": "BlankLine"
+                }
+              ]
+            },
+            "name": {
+              "type": "Identifier",
+              "value": "d"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "DecoratedCompoundStatement",
+      "decorators": {
+        "type": "Decorators",
+        "decorators": [
+          {
+            "type": "Decorator",
+            "expr": {
+              "type": "Value",
+              "value": {
+                "type": "Identifier",
+                "value": "a"
+              },
+              "trailers": [
+                {
+                  "type": "DotProperty",
+                  "property": {
+                    "type": "Identifier",
+                    "value": "b"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "stmt": {
+        "type": "FunctionDefinition",
+        "parameters": {
+          "type": "Parameters",
+          "params": []
+        },
+        "typeType": null,
+        "body": {
+          "type": "Suite",
+          "body": [
+            {
+              "type": "PassStatement"
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            },
+            {
+              "type": "RaiseStatement",
+              "err": null,
+              "context": null
+            },
+            {
+              "type": "RaiseStatement",
+              "err": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "RuntimeError"
+                },
+                "trailers": [
+                  {
+                    "type": "FunctionCallerParams",
+                    "args": {
+                      "type": "Arglist",
+                      "args": [
+                        {
+                          "type": "Argument",
+                          "arg": {
+                            "type": "Value",
+                            "value": {
+                              "type": "StringLiteral",
+                              "value": "'NO'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "context": null
+            },
+            {
+              "type": "RaiseStatement",
+              "err": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "RunTimeError"
+                },
+                "trailers": [
+                  {
+                    "type": "FunctionCallerParams",
+                    "args": {
+                      "type": "Arglist",
+                      "args": [
+                        {
+                          "type": "Argument",
+                          "arg": {
+                            "type": "Value",
+                            "value": {
+                              "type": "StringLiteral",
+                              "value": "'NO'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "context": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "e"
+                }
+              }
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            },
+            {
+              "type": "PrintStatement",
+              "value": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "a"
+                }
+              }
+            },
+            null,
+            {
+              "type": "CommentedStatement",
+              "comment": {
+                "type": "Comment",
+                "comment": " bye"
+              },
+              "statement": {
+                "type": "PrintStatement",
+                "value": {
+                  "type": "Value",
+                  "value": {
+                    "type": "Identifier",
+                    "value": "b"
+                  }
+                }
+              }
+            },
+            {
+              "type": "PrintStatement",
+              "value": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "c"
+                }
+              }
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            }
+          ]
+        },
+        "name": {
+          "type": "Identifier",
+          "value": "c"
+        }
+      }
+    },
+    {
+      "type": "CommentedStatement",
+      "comment": {
+        "type": "Comment",
+        "comment": "=================================================="
+      },
+      "statement": {
+        "type": "IfStatement",
+        "body": {
+          "type": "Suite",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expr": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "b"
+                }
+              }
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            {
+              "type": "ExpressionStatement",
+              "expr": {
+                "type": "Value",
+                "value": {
+                  "type": "Identifier",
+                  "value": "c"
+                }
+              }
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            },
+            {
+              "type": "GlobalStatement",
+              "names": [
+                {
+                  "type": "Identifier",
+                  "value": "a"
+                }
+              ]
+            },
+            {
+              "type": "GlobalStatement",
+              "names": [
+                {
+                  "type": "Identifier",
+                  "value": "a"
+                },
+                {
+                  "type": "Identifier",
+                  "value": "b"
+                }
+              ]
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null,
+            null,
+            {
+              "type": "BlankLine"
+            },
+            {
+              "type": "ExecStatement",
+              "value": {
+                "type": "StringLiteral",
+                "value": "'1+1'"
+              },
+              "ctx": null
+            },
+            {
+              "type": "ExecStatement",
+              "value": {
+                "type": "StringLiteral",
+                "value": "'x+=1'"
+              },
+              "ctx": {
+                "type": "Value",
+                "value": "N"
+              }
+            },
+            {
+              "type": "ExecStatement",
+              "value": {
+                "type": "StringLiteral",
+                "value": "'x+=1'"
+              },
+              "ctx": {
+                "type": "TestList",
+                "list": [
+                  {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "a"
+                    }
+                  },
+                  {
+                    "type": "Value",
+                    "value": {
+                      "type": "Identifier",
+                      "value": "b"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "BlankLine"
+            },
+            null,
+            null
+          ]
+        },
+        "test": {
+          "type": "Value",
+          "value": {
+            "type": "Identifier",
+            "value": "a"
+          }
+        },
+        "elifBlocks": [],
+        "elseBlock": null
+      }
+    }
+  ]
+}

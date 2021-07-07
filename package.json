@@ -1,0 +1,23 @@
+{
+  "name": "python-parser",
+  "version": "1.0.0",
+  "description": "This is a naive Python parser in **pure** Javascript. It doesn't have *any* dependencies on",
+  "main": "parser.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coleh2/python-parser.git"
+  },
+  "keywords": [
+    "python",
+    "parser"
+  ],
+  "author": "coleh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coleh2/python-parser/issues"
+  },
+  "homepage": "https://github.com/coleh2/python-parser#readme"
+}
