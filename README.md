@@ -29,3 +29,7 @@ This project uses [PegJS](https://github.com/pegjs/pegjs) for parsing, which is 
 
 **How is this different from [Skulpt](https://skulpt.org/)?**  
 Skulpt runs Python. This project *only* parses it and then gives you a syntax tree. You can use that for whatever you like: code formatting; static code analysis; even making your own interpreter!
+
+**I'm getting syntax errors!**
+
+Try adding newlines to the end of your input: e.g. instead of `pythonParser.parse(input)`, try `pythonParser.parse(input + "\n\n")`. If you're experiencing a larger error, please open an issue.
