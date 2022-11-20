@@ -19,7 +19,7 @@ If you want to parse Python in the browser, then this is your project! I made th
 
 ## Parser Output
 
-I hope that the output object can be understood with a glance at the [test output](./test-output.js). You can also take a look at the [Python grammar](./python.pegjs) to see the exact format.
+I hope that the output object can be understood with a glance at the [test output](./test-output.json). You can also take a look at the [Python grammar](./python.pegjs) to see the exact format.
 
 ## PegJS
 
